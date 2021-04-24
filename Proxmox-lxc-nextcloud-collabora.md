@@ -1,17 +1,17 @@
 
 # Proxmox
 
-# Update the server & install LAMP, APCu, Redis
+# Update et installation LAMP, APCu, Redis
 
 ```
 sudo apt update && sudo apt upgrade
 ```
 
-## Install LAMP
+## LAMP
 ```
 sudo apt install lamp-server^
 ```
-## Meta-packages
+### Meta-packages
 L'utilisation du ^ dans le nom du paquet est importante car elle permet d'installer un ensemble de paquets courament instalés ensemble.
 Cela permet d'installer Apache, MySQL et PHP avec les modules nécessaires.
 
@@ -46,17 +46,15 @@ sudo service apache2 restart
 
 ## Domaine test : cloud.mon-domaine.fr
 
-## renouvellement :
+## renouvellement @todo
 ```
 sudo crontab -e
 ```
 
-@todo
 
 
 # Nextcloud
-Pour des raisons de simplicité, Nextcloud sera installé directement dans /var/www/html.
-Attention à la version, ici la dernière était la 21.0.1.
+Pour des raisons de simplicité, Nextcloud sera installé directement dans /var/www/html. Attention à la version, ici la dernière était la 21.0.1.
 ```
 cd /var/www
 sudo wget https://download.nextcloud.com/server/releases/nextcloud-21.0.1.zip

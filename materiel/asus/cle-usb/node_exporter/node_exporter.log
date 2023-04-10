@@ -1,0 +1,1110 @@
+
+ts=2023-02-21T13:05:40.620Z caller=node_exporter.go:180 level=info msg="Starting node_exporter" version="(version=1.5.0, branch=HEAD, revision=1b48970ffcf5630534fb00bb0687d73c66d1c959)"
+ts=2023-02-21T13:05:40.620Z caller=node_exporter.go:181 level=info msg="Build context" build_context="(go=go1.19.3, user=root@fe5c284a9b59, date=20221129-18:59:26)"
+ts=2023-02-21T13:05:40.621Z caller=node_exporter.go:183 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unprivileged user, root is not required."
+ts=2023-02-21T13:05:40.623Z caller=diskstats_common.go:111 level=info collector=diskstats msg="Parsed flag --collector.diskstats.device-exclude" flag=^(ram|loop|fd|(h|s|v|xv)d[a-z]|nvme\d+n\d+p)\d+$
+ts=2023-02-21T13:05:40.624Z caller=diskstats_linux.go:264 level=error collector=diskstats msg="Failed to open directory, disabling udev device properties" path=/run/udev/data
+ts=2023-02-21T13:05:40.626Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+|var/lib/containers/storage/.+)($|/)
+ts=2023-02-21T13:05:40.626Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:110 level=info msg="Enabled collectors"
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=arp
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=bcache
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=bonding
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=btrfs
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=conntrack
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=cpu
+ts=2023-02-21T13:05:40.629Z caller=node_exporter.go:117 level=info collector=cpufreq
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=diskstats
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=dmi
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=edac
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=entropy
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=fibrechannel
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=filefd
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=filesystem
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=hwmon
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=infiniband
+ts=2023-02-21T13:05:40.630Z caller=node_exporter.go:117 level=info collector=ipvs
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=loadavg
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=mdadm
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=meminfo
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=netclass
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=netdev
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=netstat
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=nfs
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=nfsd
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=nvme
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=os
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=powersupplyclass
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=pressure
+ts=2023-02-21T13:05:40.631Z caller=node_exporter.go:117 level=info collector=rapl
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=schedstat
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=selinux
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=sockstat
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=softnet
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=stat
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=tapestats
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=textfile
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=thermal_zone
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=time
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=timex
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=udp_queues
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=uname
+ts=2023-02-21T13:05:40.632Z caller=node_exporter.go:117 level=info collector=vmstat
+ts=2023-02-21T13:05:40.633Z caller=node_exporter.go:117 level=info collector=xfs
+ts=2023-02-21T13:05:40.633Z caller=node_exporter.go:117 level=info collector=zfs
+ts=2023-02-21T13:05:40.634Z caller=tls_config.go:232 level=info msg="Listening on" address=[::]:9100
+ts=2023-02-21T13:05:40.634Z caller=tls_config.go:235 level=info msg="TLS is disabled." http2=false address=[::]:9100
+ts=2023-02-21T13:41:01.000Z caller=node_exporter.go:180 level=info msg="Starting node_exporter" version="(version=1.5.0, branch=HEAD, revision=1b48970ffcf5630534fb00bb0687d73c66d1c959)"
+ts=2023-02-21T13:41:01.001Z caller=node_exporter.go:181 level=info msg="Build context" build_context="(go=go1.19.3, user=root@fe5c284a9b59, date=20221129-18:59:26)"
+ts=2023-02-21T13:41:01.001Z caller=node_exporter.go:183 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unprivileged user, root is not required."
+ts=2023-02-21T13:41:01.004Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+|var/lib/containers/storage/.+)($|/)
+ts=2023-02-21T13:41:01.005Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-21T13:41:01.006Z caller=diskstats_common.go:111 level=info collector=diskstats msg="Parsed flag --collector.diskstats.device-exclude" flag=^(ram|loop|fd|(h|s|v|xv)d[a-z]|nvme\d+n\d+p)\d+$
+ts=2023-02-21T13:41:01.007Z caller=diskstats_linux.go:264 level=error collector=diskstats msg="Failed to open directory, disabling udev device properties" path=/run/udev/data
+ts=2023-02-21T13:41:01.010Z caller=node_exporter.go:110 level=info msg="Enabled collectors"
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=arp
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=bcache
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=bonding
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=btrfs
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=conntrack
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=cpu
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=cpufreq
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=diskstats
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=dmi
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=edac
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=entropy
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=fibrechannel
+ts=2023-02-21T13:41:01.011Z caller=node_exporter.go:117 level=info collector=filefd
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=filesystem
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=hwmon
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=infiniband
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=ipvs
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=loadavg
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=mdadm
+ts=2023-02-21T13:41:01.012Z caller=node_exporter.go:117 level=info collector=meminfo
+ts=2023-02-21T13:41:01.013Z caller=node_exporter.go:117 level=info collector=netclass
+ts=2023-02-21T13:41:01.013Z caller=node_exporter.go:117 level=info collector=netdev
+ts=2023-02-21T13:41:01.013Z caller=node_exporter.go:117 level=info collector=netstat
+ts=2023-02-21T13:41:01.013Z caller=node_exporter.go:117 level=info collector=nfs
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=nfsd
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=nvme
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=os
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=powersupplyclass
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=pressure
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=rapl
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=schedstat
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=selinux
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=sockstat
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=softnet
+ts=2023-02-21T13:41:01.014Z caller=node_exporter.go:117 level=info collector=stat
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=tapestats
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=textfile
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=thermal_zone
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=time
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=timex
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=udp_queues
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=uname
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=vmstat
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=xfs
+ts=2023-02-21T13:41:01.015Z caller=node_exporter.go:117 level=info collector=zfs
+ts=2023-02-21T13:41:01.017Z caller=tls_config.go:232 level=info msg="Listening on" address=[::]:9100
+ts=2023-02-21T13:41:01.018Z caller=tls_config.go:235 level=info msg="TLS is disabled." http2=false address=[::]:9100
+ts=2023-02-21T13:41:01.920Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.038443589 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:06.883Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002811977 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:11.879Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002745356 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:16.863Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002371691 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:21.880Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002796796 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:26.866Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002421591 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:31.873Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002829377 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:36.841Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002445832 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:41.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002490292 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:46.843Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002992298 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:51.908Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002905397 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:41:56.870Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003044462 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:01.867Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003148644 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:06.882Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002505435 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:11.859Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002490755 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:16.843Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002681257 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:21.846Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002695817 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:26.844Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00290788 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:31.879Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002822419 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:36.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00290672 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:41.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002488114 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:46.866Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002461534 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:51.890Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.024038064 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:42:56.877Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002499074 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:01.850Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.005381812 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:06.876Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002600794 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:11.847Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003352044 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:16.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002491493 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:21.864Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002442013 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:26.882Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003493626 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:31.872Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003557266 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:36.883Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002836797 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:41.848Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002447652 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:46.841Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002387011 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:51.846Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002620954 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:43:56.874Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002496492 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:01.874Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00235055 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:06.844Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00230973 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:11.882Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002768855 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:16.883Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003365263 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:21.896Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00239201 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:26.869Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002492771 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:31.844Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003522884 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:36.869Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003035358 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:41.841Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002596852 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:46.886Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003038517 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:51.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00243777 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:44:56.849Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002995717 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:01.865Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.005009902 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:06.863Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002267688 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:11.878Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003387781 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:16.877Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003852767 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:21.908Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.042305132 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:26.868Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003169218 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:31.883Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002396669 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:36.862Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002704593 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:41.859Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002703112 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:46.849Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002447589 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:51.886Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00255345 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:45:56.871Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002376808 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:01.846Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003661923 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:06.886Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002332507 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:11.858Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002622691 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:16.877Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002479849 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:21.844Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002405568 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:26.866Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002379487 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:31.893Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002403808 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:36.847Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002909293 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:41.849Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002462308 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:46.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002441447 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:51.846Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002789952 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:46:56.860Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002544589 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:01.874Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002790172 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:06.880Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002640609 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:11.901Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003442219 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:16.852Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002765771 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:21.847Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002514808 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:26.870Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002586208 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:31.853Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.005307239 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:36.846Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002559469 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:41.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00272549 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:46.879Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.003131775 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:51.861Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002723989 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:47:56.846Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002668649 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:01.901Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.034288952 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:06.844Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002462027 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:11.847Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002609128 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:16.859Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002516887 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:21.876Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002388465 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:26.847Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002469606 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:31.866Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002676088 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:36.848Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002465106 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:41.848Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002946231 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:46.848Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.00381642 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:51.886Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002631628 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:48:56.848Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002491006 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:49:01.845Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002361964 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:49:06.847Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002380765 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:49:11.858Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.004180583 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:49:16.873Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.002312463 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:49:21.877Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.004387765 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+ts=2023-02-21T13:49:26.865Z caller=collector.go:169 level=error msg="collector failed" name=netdev duration_seconds=0.0039056 err="couldn't get netstats: incorrect LinkMessage size, want: 92 or 96, got: 116"
+/tmp/mnt/ASUS/node_exporter/node_exporter_start.sh: line 7: /mnt/ASUS/node_exporter/node_exporter: not found
+level=info ts=2023-02-21T13:52:01.028Z caller=node_exporter.go:177 msg="Starting node_exporter" version="(version=1.0.0, branch=HEAD, revision=b9c96706a7425383902b6143d097cf6d7cfd1960)"
+level=info ts=2023-02-21T13:52:01.028Z caller=node_exporter.go:178 msg="Build context" build_context="(go=go1.14.3, user=root@3e55cc20ccc0, date=20200526-06:03:58)"
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:105 msg="Enabled collectors"
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=arp
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=bcache
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=bonding
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=btrfs
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=conntrack
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=cpu
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=cpufreq
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=diskstats
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=edac
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=entropy
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=filefd
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=filesystem
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=hwmon
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=infiniband
+level=info ts=2023-02-21T13:52:01.034Z caller=node_exporter.go:112 collector=ipvs
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=loadavg
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=mdadm
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=meminfo
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=netclass
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=netdev
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=netstat
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=nfs
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=nfsd
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=powersupplyclass
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=pressure
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=rapl
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=schedstat
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=sockstat
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=softnet
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=stat
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=textfile
+level=info ts=2023-02-21T13:52:01.035Z caller=node_exporter.go:112 collector=thermal_zone
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=time
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=timex
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=udp_queues
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=uname
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=vmstat
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=xfs
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:112 collector=zfs
+level=info ts=2023-02-21T13:52:01.036Z caller=node_exporter.go:191 msg="Listening on" address=:9100
+level=info ts=2023-02-21T13:52:01.036Z caller=tls_config.go:170 msg="TLS is disabled and it cannot be enabled on the fly." http2=false
+level=error ts=2023-02-21T13:52:01.037Z caller=node_exporter.go:194 err="listen tcp :9100: bind: address already in use"
+level=info ts=2023-02-21T13:53:01.028Z caller=node_exporter.go:177 msg="Starting node_exporter" version="(version=1.0.0, branch=HEAD, revision=b9c96706a7425383902b6143d097cf6d7cfd1960)"
+level=info ts=2023-02-21T13:53:01.028Z caller=node_exporter.go:178 msg="Build context" build_context="(go=go1.14.3, user=root@3e55cc20ccc0, date=20200526-06:03:58)"
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:105 msg="Enabled collectors"
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:112 collector=arp
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:112 collector=bcache
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:112 collector=bonding
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:112 collector=btrfs
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:112 collector=conntrack
+level=info ts=2023-02-21T13:53:01.033Z caller=node_exporter.go:112 collector=cpu
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=cpufreq
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=diskstats
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=edac
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=entropy
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=filefd
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=filesystem
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=hwmon
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=infiniband
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=ipvs
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=loadavg
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=mdadm
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=meminfo
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=netclass
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=netdev
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=netstat
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=nfs
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=nfsd
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=powersupplyclass
+level=info ts=2023-02-21T13:53:01.034Z caller=node_exporter.go:112 collector=pressure
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=rapl
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=schedstat
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=sockstat
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=softnet
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=stat
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=textfile
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=thermal_zone
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=time
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=timex
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=udp_queues
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=uname
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=vmstat
+level=info ts=2023-02-21T13:53:01.035Z caller=node_exporter.go:112 collector=xfs
+level=info ts=2023-02-21T13:53:01.036Z caller=node_exporter.go:112 collector=zfs
+level=info ts=2023-02-21T13:53:01.036Z caller=node_exporter.go:191 msg="Listening on" address=:9100
+level=info ts=2023-02-21T13:53:01.036Z caller=tls_config.go:170 msg="TLS is disabled and it cannot be enabled on the fly." http2=false
+level=error ts=2023-02-21T13:53:01.037Z caller=node_exporter.go:194 err="listen tcp :9100: bind: address already in use"
+level=info ts=2023-02-21T13:54:01.057Z caller=node_exporter.go:177 msg="Starting node_exporter" version="(version=1.0.0, branch=HEAD, revision=b9c96706a7425383902b6143d097cf6d7cfd1960)"
+level=info ts=2023-02-21T13:54:01.057Z caller=node_exporter.go:178 msg="Build context" build_context="(go=go1.14.3, user=root@3e55cc20ccc0, date=20200526-06:03:58)"
+level=info ts=2023-02-21T13:54:01.062Z caller=node_exporter.go:105 msg="Enabled collectors"
+level=info ts=2023-02-21T13:54:01.062Z caller=node_exporter.go:112 collector=arp
+level=info ts=2023-02-21T13:54:01.062Z caller=node_exporter.go:112 collector=bcache
+level=info ts=2023-02-21T13:54:01.062Z caller=node_exporter.go:112 collector=bonding
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=btrfs
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=conntrack
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=cpu
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=cpufreq
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=diskstats
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=edac
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=entropy
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=filefd
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=filesystem
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=hwmon
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=infiniband
+level=info ts=2023-02-21T13:54:01.063Z caller=node_exporter.go:112 collector=ipvs
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=loadavg
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=mdadm
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=meminfo
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=netclass
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=netdev
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=netstat
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=nfs
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=nfsd
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=powersupplyclass
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=pressure
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=rapl
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=schedstat
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=sockstat
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=softnet
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=stat
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=textfile
+level=info ts=2023-02-21T13:54:01.064Z caller=node_exporter.go:112 collector=thermal_zone
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=time
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=timex
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=udp_queues
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=uname
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=vmstat
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=xfs
+level=info ts=2023-02-21T13:54:01.065Z caller=node_exporter.go:112 collector=zfs
+level=info ts=2023-02-21T13:54:01.066Z caller=node_exporter.go:191 msg="Listening on" address=:9100
+level=info ts=2023-02-21T13:54:01.066Z caller=tls_config.go:170 msg="TLS is disabled and it cannot be enabled on the fly." http2=false
+level=error ts=2023-02-21T13:54:01.845Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015156 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:01.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002397 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:06.854Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000159159 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:06.890Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.015760025 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:11.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00016094 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:11.853Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002083 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:16.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011874 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:16.852Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020298 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:21.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013946 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:21.862Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00026238 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:26.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014436 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:26.861Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022514 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:31.852Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000298 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:31.860Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002037 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:36.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013672 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:36.869Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022574 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:41.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00017976 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:41.851Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00026792 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:46.851Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001203 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:46.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024542 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:51.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022516 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:51.848Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014768 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:54:56.847Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020376 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:54:56.870Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013902 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:01.860Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000171199 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:01.876Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019072 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:06.845Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011772 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:06.858Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000522959 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:11.848Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024008 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:11.854Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00016964 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:16.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00019786 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:16.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022474 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:21.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011956 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:21.858Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002121 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:26.839Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014284 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:26.863Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000260219 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:31.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000135739 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:31.867Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019748 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:36.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011736 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:36.845Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002036 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:41.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012366 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:41.869Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000366879 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:46.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00017088 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:46.847Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021782 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:51.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013898 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:51.865Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021022 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:55:56.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015016 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:55:56.855Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024844 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:01.851Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000880179 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:01.871Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000217739 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:06.847Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00016284 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:06.855Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000198519 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:11.839Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013848 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:11.856Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002288 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:16.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00034654 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:16.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011992 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:21.855Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000151059 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:21.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0004151 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:26.850Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012698 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:26.874Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002113 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:31.844Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002022 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:31.861Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001463 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:36.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00010484 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:36.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00018696 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:41.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002723 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:41.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012438 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:46.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:46.866Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000237319 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:51.851Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0003376 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:51.851Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001366 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:56:56.836Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00027994 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:56:56.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012656 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:01.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021146 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:01.848Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011726 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:06.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00017672 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:06.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00017328 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:11.843Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002029 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:11.860Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014774 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:16.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021378 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:16.849Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000137959 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:21.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021024 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:21.845Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013028 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:26.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020052 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:26.851Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013116 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:31.843Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002585 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:31.861Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.01677601 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:36.861Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00026046 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:36.863Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012514 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:41.850Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013016 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:41.851Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022424 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:46.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00018392 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:46.848Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00027034 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:51.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00030776 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:51.853Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013892 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:57:56.846Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.001302759 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:57:56.855Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014964 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:01.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001913 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:01.853Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00026206 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:06.842Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00029444 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:06.859Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015368 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:11.853Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012608 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:11.866Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019368 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:16.836Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002343 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:16.845Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011464 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:21.845Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002682 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:21.848Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012332 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:26.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013104 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:26.849Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021008 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:31.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001298 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:31.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022244 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:36.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019292 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:36.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000151 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:41.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015528 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:41.858Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020586 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:46.836Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00027044 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:46.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012584 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:51.855Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00029314 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:51.878Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00032346 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:58:56.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00023614 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:58:56.847Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013832 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:01.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000131 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:01.875Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00040512 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:06.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013168 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:06.856Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00026664 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:11.847Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000165599 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:11.865Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024542 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:16.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000277579 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:16.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00018282 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:21.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00016596 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:21.849Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019618 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:26.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015236 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:26.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024332 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:31.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00025802 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:31.862Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.021568232 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:36.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021436 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:36.858Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012848 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:41.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001085 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:41.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020236 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:46.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00029328 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:46.851Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000127359 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:51.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012904 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:51.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00042228 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T13:59:56.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015478 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T13:59:56.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000245581 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:01.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001352 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:01.854Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002326 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:06.847Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000179721 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:06.851Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020044 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:11.846Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0001993 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:11.854Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012976 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:16.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000193021 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:16.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000183921 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:21.839Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011298 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:21.849Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000236561 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:26.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012714 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:26.856Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002051 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:31.855Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000272321 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:31.859Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00018352 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:36.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019516 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:36.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000127721 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:41.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013672 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:41.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019608 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:46.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014812 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:46.870Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000228481 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:51.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000244121 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:51.854Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00017276 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:00:56.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000211 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:00:56.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014506 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:01.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012694 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:01.850Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000219861 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:06.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021798 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:06.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011914 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:11.858Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022004 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:11.859Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00016484 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:16.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000131121 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:16.845Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019404 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:21.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000265401 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:21.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000123 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:26.846Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00027902 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:26.852Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000128741 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:31.839Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001457 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:31.850Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000345001 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:36.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00016588 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:36.859Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000187001 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:41.844Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00041734 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:41.853Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000594781 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:46.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014404 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:46.850Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024134 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:51.849Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013192 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:01:51.852Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000180221 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:56.842Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000237241 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:01:56.865Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013558 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:01.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000228781 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:01.872Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000237481 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:06.848Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.001276582 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:06.879Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000333821 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:11.841Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0001981 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:11.884Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001418 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:16.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001202 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:16.841Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000222301 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:21.842Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019404 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:21.849Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000125661 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:26.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000414821 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:26.868Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000266841 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:31.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00018198 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:31.878Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000284101 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:36.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013256 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:36.864Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000223181 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:41.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000135221 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:41.855Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022298 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:46.834Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000260801 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:46.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000112601 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:51.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=9.34e-05 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:51.841Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019074 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:02:56.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012596 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:02:56.856Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00021438 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:01.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00029678 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:01.852Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000180121 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:06.845Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000253221 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:06.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012092 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:11.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011996 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:11.848Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00023132 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:16.852Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000174881 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:16.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00031792 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:21.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000181321 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:21.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0001952 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:26.846Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.003323106 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:26.855Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000155381 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:31.834Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014428 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:31.848Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000230201 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:36.854Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022466 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:36.871Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014644 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:41.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00022542 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:41.853Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020906 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:46.834Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012592 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:46.847Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000359041 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:51.836Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000236221 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:03:51.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013012 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:56.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013324 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:03:56.864Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.001846204 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:01.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012336 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:01.851Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000199621 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:06.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000197361 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:06.858Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000397441 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:11.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0002339 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:11.854Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000129 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:16.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013074 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:16.854Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000230621 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:21.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013956 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:21.847Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020092 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:26.843Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00019888 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:26.857Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000482261 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:31.833Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000323641 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:31.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011486 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:36.839Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001475 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:36.842Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00025128 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:41.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013596 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:41.856Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00035856 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:46.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011974 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:46.866Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000202601 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:51.844Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000216521 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:51.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00035686 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:04:56.846Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000284621 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:04:56.853Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000139721 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:01.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00029956 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:01.845Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00015086 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:06.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00023088 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:06.854Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000513921 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:11.837Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001091 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:11.849Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020456 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:16.834Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024386 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:16.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000138201 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:21.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00017308 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:21.864Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000243701 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:26.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000233281 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:26.861Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000125541 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:31.848Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000158661 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:31.863Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020996 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:36.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00011524 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:36.875Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000234861 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:41.850Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00023356 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:41.857Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000225621 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:46.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012584 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:46.858Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000228561 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:51.839Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020196 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:05:51.865Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.001218563 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:56.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00010234 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:05:56.848Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000249061 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:01.833Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014506 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:01.864Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00020988 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:06.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.006295373 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:06.854Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00024324 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:11.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012074 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:11.853Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0003193 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:16.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00014746 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:16.866Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000207 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:21.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000124 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:21.851Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00026622 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:26.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00017294 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:26.875Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00023112 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:31.838Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00029486 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:31.843Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0002969 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:36.842Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00019018 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:36.856Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000228121 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:41.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000227841 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:41.847Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013006 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:46.832Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000225521 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:46.872Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012346 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:51.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.00022718 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:51.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001241 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:06:56.840Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.0001969 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:06:56.840Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001365 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:01.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012428 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:01.863Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000305481 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:06.835Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000197581 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:06.839Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000137621 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:11.841Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012618 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:11.865Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000181121 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:16.832Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000239901 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:16.836Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000152881 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:21.879Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000311621 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:21.880Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000126181 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:26.845Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00013308 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:26.868Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000320421 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:31.844Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.0001377 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:31.860Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000323061 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:36.834Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000238761 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:36.847Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012808 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:41.834Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000268981 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:41.859Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000132 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:46.834Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000119161 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:46.863Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000336701 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:51.860Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00030386 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:07:51.874Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.023923989 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:56.837Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000246021 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:07:56.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00012162 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:08:01.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.00018562 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:08:01.864Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000379421 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:08:06.849Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000171761 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:08:06.846Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000203202 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:08:11.834Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000242823 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:08:11.850Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000148621 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:08:16.835Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000147421 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:08:16.843Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000369964 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+level=error ts=2023-02-21T14:08:21.838Z caller=collector.go:161 msg="collector failed" name=mdadm duration_seconds=0.000173282 err="error parsing mdstatus: error parsing mdstat /proc/mdstat: open /proc/mdstat: no such file or directory"
+level=error ts=2023-02-21T14:08:21.866Z caller=collector.go:161 msg="collector failed" name=powersupplyclass duration_seconds=0.000315523 err="could not get power_supply class info: error obtaining power_supply class info: failed to list power supplies at \"/sys/class/power_supply\": open /sys/class/power_supply: no such file or directory"
+ts=2023-02-21T14:08:44.496Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-21T14:08:44.496Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-21T14:08:44.496Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-21T14:08:44.502Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-21T14:08:44.503Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-21T14:08:44.504Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-21T14:08:44.504Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-21T14:08:44.504Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-21T14:08:44.504Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-21T14:08:44.504Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-21T14:08:44.504Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-21T14:08:44.505Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-21T14:08:44.506Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-21T14:08:44.507Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-21T14:08:44.508Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-21T14:08:44.509Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-21T15:18:01.127Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-21T15:18:01.128Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-21T15:18:01.128Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-21T15:18:01.132Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-21T15:18:01.132Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-21T15:18:01.135Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-21T15:18:01.136Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-21T15:18:01.137Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-21T15:18:01.138Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-21T15:18:01.138Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-21T15:18:01.138Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-21T15:18:01.138Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-21T15:18:01.138Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-21T15:18:01.138Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-21T15:18:01.139Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-22T04:03:00.633Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-22T04:03:00.634Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-22T04:03:00.634Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-22T04:03:00.636Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-22T04:03:00.636Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-22T04:03:00.641Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-22T04:03:00.642Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-22T04:03:00.643Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-22T04:03:00.644Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-22T04:03:00.644Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-22T04:03:00.644Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-22T04:03:00.644Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-22T04:03:00.644Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-22T04:03:00.645Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-23T04:03:01.486Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-23T04:03:01.487Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-23T04:03:01.487Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-23T04:03:01.492Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-23T04:03:01.492Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-23T04:03:01.494Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-23T04:03:01.495Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-23T04:03:01.496Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-23T04:03:01.497Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-23T04:03:01.497Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-23T04:03:01.497Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-23T04:03:01.498Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-24T04:03:01.221Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-24T04:03:01.223Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-24T04:03:01.223Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-24T04:03:01.228Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-24T04:03:01.229Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-24T04:03:01.230Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-24T04:03:01.230Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-24T04:03:01.230Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-24T04:03:01.231Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-24T04:03:01.232Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-24T04:03:01.233Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-24T04:03:01.234Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-24T04:03:01.234Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-24T04:03:01.234Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-24T04:03:01.234Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-24T04:03:01.234Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-24T04:03:01.234Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-24T04:03:01.235Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-25T04:03:01.430Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-25T04:03:01.431Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-25T04:03:01.432Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-25T04:03:01.435Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-25T04:03:01.435Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-25T04:03:01.438Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-25T04:03:01.439Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-25T04:03:01.440Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-25T04:03:01.441Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-25T04:03:01.441Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-25T04:03:01.441Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-25T04:03:01.441Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-25T04:03:01.442Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-26T04:03:01.084Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-26T04:03:01.085Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-26T04:03:01.086Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-26T04:03:01.087Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-26T04:03:01.087Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-26T04:03:01.092Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-26T04:03:01.092Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-26T04:03:01.092Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-26T04:03:01.092Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-26T04:03:01.093Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-26T04:03:01.094Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-26T04:03:01.095Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-26T04:03:01.096Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-26T04:03:01.096Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
+ts=2023-02-27T04:03:01.178Z caller=node_exporter.go:182 level=info msg="Starting node_exporter" version="(version=1.3.1, branch=HEAD, revision=a2321e7b940ddcff26873612bccdf7cd4c42b6b6)"
+ts=2023-02-27T04:03:01.179Z caller=node_exporter.go:183 level=info msg="Build context" build_context="(go=go1.17.3, user=root@2efabfa20624, date=20211205-11:09:40)"
+ts=2023-02-27T04:03:01.179Z caller=node_exporter.go:185 level=warn msg="Node Exporter is running as root user. This exporter is designed to run as unpriviledged user, root is not required."
+ts=2023-02-27T04:03:01.184Z caller=filesystem_common.go:111 level=info collector=filesystem msg="Parsed flag --collector.filesystem.mount-points-exclude" flag=^/(dev|proc|run/credentials/.+|sys|var/lib/docker/.+)($|/)
+ts=2023-02-27T04:03:01.184Z caller=filesystem_common.go:113 level=info collector=filesystem msg="Parsed flag --collector.filesystem.fs-types-exclude" flag=^(autofs|binfmt_misc|bpf|cgroup2?|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|iso9660|mqueue|nsfs|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|selinuxfs|squashfs|sysfs|tracefs)$
+ts=2023-02-27T04:03:01.185Z caller=node_exporter.go:108 level=info msg="Enabled collectors"
+ts=2023-02-27T04:03:01.185Z caller=node_exporter.go:115 level=info collector=arp
+ts=2023-02-27T04:03:01.185Z caller=node_exporter.go:115 level=info collector=bcache
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=bonding
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=btrfs
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=conntrack
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=cpu
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=cpufreq
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=diskstats
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=dmi
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=edac
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=entropy
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=fibrechannel
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=filefd
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=filesystem
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=hwmon
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=infiniband
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=ipvs
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=loadavg
+ts=2023-02-27T04:03:01.186Z caller=node_exporter.go:115 level=info collector=mdadm
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=meminfo
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=netclass
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=netdev
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=netstat
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=nfs
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=nfsd
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=nvme
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=os
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=powersupplyclass
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=pressure
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=rapl
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=schedstat
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=sockstat
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=softnet
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=stat
+ts=2023-02-27T04:03:01.187Z caller=node_exporter.go:115 level=info collector=tapestats
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=textfile
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=thermal_zone
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=time
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=timex
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=udp_queues
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=uname
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=vmstat
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=xfs
+ts=2023-02-27T04:03:01.188Z caller=node_exporter.go:115 level=info collector=zfs
+ts=2023-02-27T04:03:01.189Z caller=node_exporter.go:199 level=info msg="Listening on" address=:9100
+ts=2023-02-27T04:03:01.189Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false

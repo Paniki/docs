@@ -1,0 +1,9 @@
+ts=2023-02-22T11:02:55.612Z caller=main.go:148 level=info msg="Starting snmp_exporter" version="(version=0.21.0, branch=HEAD, revision=0d8c3527cac0c26f1d6005b84b74413d14264c37)"
+ts=2023-02-22T11:02:55.613Z caller=main.go:149 level=info build_context="(go=go1.19.3, user=root@51dfd4b1f59b, date=20221122-15:16:07)"
+ts=2023-02-22T11:02:57.274Z caller=main.go:246 level=error msg="Error starting HTTP server" err="listen tcp :9100: bind: address already in use"
+ts=2023-02-22T11:04:16.155Z caller=main.go:148 level=info msg="Starting snmp_exporter" version="(version=0.21.0, branch=HEAD, revision=0d8c3527cac0c26f1d6005b84b74413d14264c37)"
+ts=2023-02-22T11:04:16.155Z caller=main.go:149 level=info build_context="(go=go1.19.3, user=root@51dfd4b1f59b, date=20221122-15:16:07)"
+ts=2023-02-22T11:04:17.925Z caller=tls_config.go:232 level=info msg="Listening on" address=[::]:9116
+ts=2023-02-22T11:04:17.926Z caller=tls_config.go:235 level=info msg="TLS is disabled." http2=false address=[::]:9116
+ts=2023-02-22T19:00:59.407Z caller=main.go:182 level=info msg="Loaded config file"
+ts=2023-02-23T04:00:20.768Z caller=collector.go:282 level=info module=if_mib target=10.0.0.99 msg="Error scraping target" err="error getting target 10.0.0.99: error reading from socket: read udp 10.0.0.99:33442->10.0.0.99:161: recvfrom: connection refused"
